@@ -23,6 +23,7 @@ namespace CityLibrarySystem.Context
         public DbSet<Member> Members { get; set; }
         public DbSet<Loan> Loans { get; set; }
         public DbSet<Fine> Fines { get; set; }
+        public DbSet<MemberLoan> MemberLoans { get; set; }
         #endregion
 
     }

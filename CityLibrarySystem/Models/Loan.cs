@@ -16,5 +16,8 @@ namespace CityLibrarySystem.Models
         #region Loan & Fine
         public Fine ?Fine { get; set; }
         #endregion
+        #region Loan - MemberLoan
+        public ICollection<MemberLoan> loan { get; set; } = new HashSet<MemberLoan>();
+        #endregion
     }
 }

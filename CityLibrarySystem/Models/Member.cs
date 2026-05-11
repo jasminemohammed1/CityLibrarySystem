@@ -18,6 +18,10 @@ namespace CityLibrarySystem.Models
         public DateTime MemberShipDate { get; set; }
         public MemberStatus Status { get; set; }
         #endregion
+        #region Member - MemberLoan
+
+        public ICollection<MemberLoan> MemberLoan { get; set; } = new HashSet<MemberLoan>();
+        #endregion
 
 
     }

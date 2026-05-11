@@ -26,5 +26,8 @@ namespace CityLibrarySystem.Models
         public int CategoryId { get; set; }
 
         #endregion
+        #region Book - MemberLoan
+        public ICollection<MemberLoan> BookLoans { get; set; } = new HashSet<MemberLoan>();
+        #endregion
     }
 }

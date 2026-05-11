@@ -13,5 +13,8 @@ namespace CityLibrarySystem.Models
         public DateTime LoanDate {  get; set; }
         public LoanStatus LoanStatus { get; set; }
         #endregion
+        #region Loan & Fine
+        public Fine ?Fine { get; set; }
+        #endregion
     }
 }

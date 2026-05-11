@@ -17,6 +17,10 @@ namespace CityLibrarySystem.Models
 
 
         #endregion
+        #region Loan & Fine
+        public Loan Loan { get; set; } = null!;
+        public int LoanId { get; set; }
+        #endregion
 
     }
 }

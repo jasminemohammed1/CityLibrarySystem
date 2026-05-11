@@ -19,6 +19,12 @@ namespace CityLibrarySystem.Configurations
             builder.Property(x => x.FineStatus).HasConversion<string>().HasColumnType("varchar")
                  .HasMaxLength(9);
             #endregion
+            #region Fine & Loan
+            builder.HasOne(x => x.Loan)
+                .WithOne(x => x.Fine)
+                .HasForeignKey<Fine>(x => x.LoanId);
+            #endregion
         }
+
     }
 }

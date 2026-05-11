@@ -30,6 +30,11 @@ namespace CityLibrarySystem.Configurations
                 .WithMany(x => x.AuthorBooks)
                 .HasForeignKey(x => x.AuthorId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasOne(x => x.BookCategory)
+                .WithMany(x => x.CategoryBooks)
+                .HasForeignKey(x => x.CategoryId);
+
             #endregion
 
 

@@ -21,5 +21,10 @@ namespace CityLibrarySystem.Models
         public int AuthorId { get; set; }
         public Author BookAuthor { get; set; } = null!;
         #endregion
+        #region Book - Category
+        public Category BookCategory { get; set; } = null!;
+        public int CategoryId { get; set; }
+
+        #endregion
     }
 }

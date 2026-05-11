@@ -25,6 +25,13 @@ namespace CityLibrarySystem.Configurations
             );
 
             #endregion
+            #region Relationships
+            builder.HasOne(x => x.BookAuthor)
+                .WithMany(x => x.AuthorBooks)
+                .HasForeignKey(x => x.AuthorId)
+                .OnDelete(DeleteBehavior.Restrict);
+            #endregion
+
 
         }
     }

@@ -17,5 +17,9 @@ namespace CityLibrarySystem.Models
         public int TotalCopies { get; set; }
 
         #endregion
+        #region Book - Author
+        public int AuthorId { get; set; }
+        public Author BookAuthor { get; set; } = null!;
+        #endregion
     }
 }

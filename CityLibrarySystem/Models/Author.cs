@@ -13,5 +13,8 @@ namespace CityLibrarySystem.Models
         public string LastName { get; set; } = null!;
         public DateTime DateOfBirth { get; set; }
         #endregion
+        #region Book-Author
+        public ICollection<Book> AuthorBooks = new HashSet<Book>();
+        #endregion
     }
 }
